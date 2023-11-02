@@ -66,7 +66,7 @@ I extend my sincere appreciation to the instructors and the entire team for thei
 was to challenge ourselves further by taking up the Python Developer course offered by SoloLearn.
 
 Completing the SoloLearn Python Developer course proved to be an enriching experience, aiding in consolidating the fundamentals of Python and honing my logic-building 
-skills. As a testament to this achievement, I've proudly obtained the certification, a photo of which is included in this repository's README file.
+skills. As a testament to this achievement, I've proudly obtained the certification, a copy of which is included in this repository's README file.
 ![PYTHON DEVELOPER]
 [0e8c1826-c1b1-4bab-83f5-b2a12259ac30 (1).pdf](https://github.com/Fortesacena/Beetroot_course/files/13245554/0e8c1826-c1b1-4bab-83f5-b2a12259ac30.1.pdf)
 
