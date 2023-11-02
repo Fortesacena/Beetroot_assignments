@@ -30,7 +30,7 @@ print("Original sys.path:")
 print(sys.path)
 
 # Add the current directory to sys.path
-new_path = r'C:\Users\forte\Desktop\Beetroot_assignments\Tasks\Modules_directory'
+new_path = r'C:\Users\forte\Desktop\Beetroot_course\Tasks\Modules_directory'
 sys.path.append(new_path)
 
 # Display the modified sys.path
@@ -81,6 +81,6 @@ Does your PYTHONPATH need to include the directory where you created mymod.py?
 """
 from mymod import count_lines, count_chars, test
 
-file_name =  r'C:\Users\forte\Desktop\Beetroot_assignments\Tasks\Modules_directory\sample.txt'
+file_name =  r'C:\Users\forte\Desktop\Beetroot_course\Tasks\Modules_directory\sample.txt'
 
 print(test(file_name))
