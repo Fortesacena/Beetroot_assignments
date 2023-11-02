@@ -33,9 +33,13 @@ def task_2():
         a=int(input("Input the value of a:"))
         b=int(input("Input the value of b:"))
 
-        result = a**2 - b
+        result = a**2 / b
         print("The result of squared a divided by b is: ", result)
+
     except ValueError as e:
+        print(f'Error: {e}')
+
+    except ZeroDivisionError as e:
         print(f'Error: {e}')
     
 task_2()
