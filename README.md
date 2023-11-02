@@ -67,7 +67,6 @@ was to challenge ourselves further by taking up the Python Developer course offe
 
 Completing the SoloLearn Python Developer course proved to be an enriching experience, aiding in consolidating the fundamentals of Python and honing my logic-building 
 skills. As a testament to this achievement, I've proudly obtained the certification, a photo of which is included in this repository's README file.
-![PYTHON DEVELOPER]
 <img src="![48324eb5-047b-49e8-92a6-55f743fe32e7 (1)](https://github.com/Fortesacena/Beetroot_course/assets/121317246/95e8ec71-ce29-493a-bb3b-1388a7d487eb)
 " alt="Certificate" width="300" height="200">
 
