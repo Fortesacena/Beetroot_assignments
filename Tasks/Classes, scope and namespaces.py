@@ -61,27 +61,28 @@ is_exist(N/'name') - gets 1 argument - the number N or the string 'name' and ret
 
 The default channel turned on before all commands is №1."""
 
-
 class TVController:
     def __init__(self, channels):
         self.channels = channels
         self.current_channel_index = 0
 
     def first_channel(self):
-        self.current_channel_index = 0
+        return self.channels[0]
 
     def last_channel(self):
-        self.current_channel_index = len(self.channels) - 1
+        return self.channels[len(self.channels) - 1]
 
     def turn_channel(self, channel_number):
         if 1 <= channel_number <= len(self.channels):
-            self.current_channel_index = channel_number - 1
+            return self.channels[channel_number - 1]
 
     def next_channel(self):
         self.current_channel_index = (self.current_channel_index + 1) % len(self.channels)
+        return self.channels[self.current_channel_index]
 
     def previous_channel(self):
         self.current_channel_index = (self.current_channel_index - 1) % len(self.channels)
+        return self.channels[self.current_channel_index]
 
     def current_channel(self):
         return self.channels[self.current_channel_index]
@@ -95,17 +96,15 @@ class TVController:
             return "No"
 
 
-channels_list = ["BBC", "CNN", "Discovery", "ESPN"]
+channels_list = ["BBC","Discovery", "TV1000"]
+
 controller = TVController(channels_list)
 
-controller.first_channel()
-print(controller.current_channel()) 
-
-controller.turn_channel(3)
-print(controller.current_channel())  
-
-controller.next_channel()
-print(controller.current_channel())  
-
-print(controller.is_exist(2))  
-print(controller.is_exist("HBO"))  
+assert controller.first_channel() == "BBC"
+assert controller.last_channel() == "TV1000"
+assert controller.turn_channel(1) == "BBC"
+assert controller.next_channel() == "Discovery"
+assert controller.previous_channel() == "BBC"
+assert controller.current_channel() == "BBC"
+assert controller.is_exist(4) == "No"
+assert controller.is_exist("BBC") == "Yes"
