@@ -35,6 +35,22 @@ if __name__ == '__main__':
 for this solution and write tests using unittest library"""
 
 
+class Phonebook:
+    def __init__(self):
+        self.contacts = {}
+
+    def add_contact(self, name, number):
+        self.contacts[name] = number
+
+    def get_contact(self, name):
+        return self.contacts.get(name)
+
+    def delete_contact(self, name):
+        del self.contacts[name]
+
+    def clear(self):
+        self.contacts.clear()
+
 import unittest
 
 class TestPhonebookApplication(unittest.TestCase):
